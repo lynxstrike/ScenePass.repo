@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ScenePass | Automatic Intro & Recap Detection</title>
+
+<meta name="description"
+content="Automatically detect TV intros and recap segments using audio fingerprinting and speech recognition. ScenePass ships a Kodi skip-button addon, plus open sidecar marker formats.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="ScenePass | Automatic Intro & Recap Detection">
+<meta property="og:description" content="Automatically detect TV intros and recap segments using audio fingerprinting and speech recognition. ScenePass ships a Kodi skip-button addon, plus open sidecar marker formats.">
+<meta property="og:image" content="assets/ScenePass-fanart.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ScenePass | Automatic Intro & Recap Detection">
+<meta name="twitter:description" content="Automatically detect TV intros and recap segments using audio fingerprinting and speech recognition.">
+<meta name="twitter:image" content="assets/ScenePass-fanart.jpg">
+
+<link rel="icon" href="assets/favicon.ico">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+<div class="nebula"></div>
+<div class="grain"></div>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<img src="assets/ScenePass-logo.png" alt="ScenePass Logo" width="480" height="515">
+
+</div>
+
+<ul>
+
+<li><a href="#showcase" data-i18n="navNew">What's New</a></li>
+<li><a href="#features" data-i18n="navFeatures">Features</a></li>
+<li><a href="#how" data-i18n="navHow">How It Works</a></li>
+<li><a href="#download" data-i18n="navDownload">Download</a></li>
+<li><a href="#legal">Disclaimer</a></li>
+<li><a href="#support" data-i18n="navSupport">Support</a></li>
+
+</ul>
+
+<div class="nav-right">
+
+<div class="nav-themes" role="group" aria-label="Accent theme">
+<button class="theme-swatch is-active" data-theme-index="0" aria-label="Nebula Blue theme" style="background:linear-gradient(135deg,#32C8FF,#FF981E)"></button>
+<button class="theme-swatch" data-theme-index="1" aria-label="Solar Flare theme" style="background:linear-gradient(135deg,#FF6B35,#FFD23F)"></button>
+<button class="theme-swatch" data-theme-index="2" aria-label="Violet Storm theme" style="background:linear-gradient(135deg,#A855F7,#EC4899)"></button>
+<button class="theme-swatch" data-theme-index="3" aria-label="Emerald Signal theme" style="background:linear-gradient(135deg,#10B981,#22D3EE)"></button>
+</div>
+
+<a class="download-button"
+href="https://github.com/lynxstrike/ScenePass.repo/releases/latest"
+data-i18n="navDownload">
+
+Download
+
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-background">
+
+<img src="assets/ScenePass-fanart.jpg"
+alt="ScenePass Background" width="1376" height="768">
+
+</div>
+
+<div class="hero-overlay"></div>
+<div class="hero-glow"></div>
+
+<div class="hero-content">
+
+<div class="hero-left">
+
+<span class="hero-tag" data-i18n="heroTag">
+
+Audio Fingerprinting • Monitor • Scheduler • Family Share • Remote
+
+</span>
+
+<h1>
+
+<span data-i18n="heroHeadA">Skip the Intro &amp; Recap.</span><br>
+<span class="accent-line" data-i18n="heroHeadB">Now It Watches Your Whole Household.</span>
+
+</h1>
+
+<p data-i18n="heroBody">
+
+ScenePass finds intros and recaps automatically, then keeps
+working after the scan: watching for new episodes, running on
+a schedule, sharing profiles with your family, and following
+you to your phone.
+
+</p>
+
+<div class="hero-buttons">
+
+<a class="primary-button"
+href="https://github.com/lynxstrike/ScenePass.repo/releases/latest"
+data-i18n="primaryBtn">
+
+Download Latest Release
+
+</a>
+
+<a class="secondary-button"
+href="#showcase"
+data-i18n="secondaryBtn">
+
+See What's New
+
+</a>
+
+</div>
+
+<div class="hero-stats">
+
+<div>
+
+<h2>100%</h2>
+<p data-i18n="statPortable">Local</p>
+
+</div>
+
+<div>
+
+<h2>6</h2>
+<p data-i18n="statFeatures">Major Features</p>
+
+</div>
+
+<div>
+
+<h2>2</h2>
+<p data-i18n="statLang">Languages</p>
+
+</div>
+
+<div>
+
+<h2>0</h2>
+<p data-i18n="statMod">Video Modification</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="glass-panel">
+
+<img src="assets/ScenePass-logo.png"
+alt="ScenePass" width="480" height="515">
+
+<h3>
+
+ScenePass 2.0
+
+</h3>
+
+<p>
+
+Detection, plus everything around it: it watches, it schedules
+itself, it follows your family and your phone, and it looks
+the way you want it to. Kodi is the only wired-up player today —
+Jellyfin, Emby, and Plex would each need their own bridge.
+
+</p>
+
+<div class="mini-badges">
+<span class="mini-badge">Monitor</span>
+<span class="mini-badge">Scheduler</span>
+<span class="mini-badge">Family Share</span>
+<span class="mini-badge">Remote</span>
+<span class="mini-badge">Themes</span>
+<span class="mini-badge">EN / ES</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FEATURE PREVIEW ================= -->
+
+<section class="quick-features">
+
+<div class="feature-card">
+
+<div class="icon"><svg viewBox="0 0 24 24"><path d="M3 12h2l2-7 3 14 3-10 2 5h6"/></svg></div>
+
+<h3>
+
+Audio Fingerprinting
+
+</h3>
+
+<p>
+
+Cross-season intro matching using multiple
+consensus engines.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v10H9l-4 3.5V5z"/></svg></div>
+
+<h3>
+
+Speech &amp; Text Detection
+
+</h3>
+
+<p>
+
+Whisper, OCR and subtitle analysis combine
+to detect recap sequences.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="icon"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg></div>
+
+<h3>
+
+Fast Processing
+
+</h3>
+
+<p>
+
+Process entire television libraries with
+confidence scoring and automatic exports.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V6l7-3z"/></svg></div>
+
+<h3>
+
+Sidecar Safe
+
+</h3>
+
+<p>
+
+Your original video files are never modified.
+
+</p>
+
+</div>
+
+</section>
+
+<div class="divider-glow"></div>
+
+<!-- ================= WHAT'S NEW ================= -->
+
+<section id="showcase">
+
+<div class="section-title">
+<span data-i18n="newTag">New In This Release</span>
+<h2 data-i18n="newTitle">Six ways ScenePass got bigger</h2>
+<p data-i18n="newBody">Everything below runs locally, right alongside the detection engine you already trust.</p>
+</div>
+
+<div class="showcase-grid">
+
+<div class="showcase-card">
+<div class="showcase-icon"><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
+<h3 data-i18n="monitorTitle">Background Monitor</h3>
+<p class="desc" data-i18n="monitorBody">Watches your mounted libraries from the system tray and scans new episodes automatically the moment they land — no manual re-scan.</p>
+<div class="showcase-visual">
+<div class="mon-row"><span class="mon-dot"></span><span>Watching · Steelport S04</span></div>
+<div class="mon-row"><span class="mon-dot"></span><span>Watching · Kingdom Falls S02</span></div>
+<div class="mon-row"><span class="mon-dot idle"></span><span>Idle · The Smallville Hour S01</span></div>
+</div>
+</div>
+
+<div class="showcase-card">
+<div class="showcase-icon"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M16 3v4M8 3v4M3.5 10h17"/><path d="M12 13.5v2.5l2 1.2" stroke-width="1.5"/></svg></div>
+<h3 data-i18n="schedTitle">Scheduled Scans</h3>
+<p class="desc" data-i18n="schedBody">Set a nightly or weekly window and ScenePass runs quietly in the background, so scans never compete with the TV you're actually watching.</p>
+<div class="showcase-visual">
+<div class="cal-grid">
+<div class="cal-cell"></div><div class="cal-cell"></div><div class="cal-cell on"></div>
+<div class="cal-cell"></div><div class="cal-cell on"></div><div class="cal-cell"></div><div class="cal-cell"></div>
+</div>
+<div class="cal-caption"><span>Nightly · 2:00 AM – 4:00 AM</span></div>
+</div>
+</div>
+
+<div class="showcase-card">
+<div class="showcase-icon"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3.2"/><path d="M2 20c0-4.2 2.7-6.5 6-6.5s6 2.3 6 6.5"/><circle cx="18" cy="9" r="2.4"/><path d="M15.2 20c.2-3.3 1.9-5.3 3.8-5.3"/></svg></div>
+<h3 data-i18n="familyTitle">Family Share</h3>
+<p class="desc" data-i18n="familyBody">Give everyone in the house their own profile. Held, unconfirmed results stay read-only for family members — only you confirm a boundary.</p>
+<div class="showcase-visual">
+<div class="fam-row">
+<div class="fam-avatar" style="background:var(--blue)">O</div>
+<div class="fam-avatar" style="background:var(--orange)">M</div>
+<div class="fam-avatar" style="background:#6b7fd7">K</div>
+</div>
+<div class="fam-note">Kids profile — held results are read-only</div>
+</div>
+</div>
+
+<div class="showcase-card">
+<div class="showcase-icon"><svg viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.3h2"/></svg></div>
+<h3 data-i18n="remoteTitle">Mobile Remote</h3>
+<p class="desc" data-i18n="remoteBody">Control ScenePass from your phone: check scan status, browse the held queue, and skip intros from the couch.</p>
+<div class="showcase-visual">
+<div class="remote-wrap">
+<div class="phone"><div class="phone-bar"></div><div class="phone-bar two"></div></div>
+<p class="remote-copy">Now Playing<br>S03E07 — 00:41:12<br><strong style="color:var(--blue)">Skip Intro ▸</strong></p>
+</div>
+</div>
+</div>
+
+<div class="showcase-card">
+<div class="showcase-icon"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 100 18 2 2 0 002-2c0-.5-.2-.9-.5-1.2-.4-.4-.1-1.1.5-1.1h1.4A4.6 4.6 0 0021 12 9 9 0 0012 3z"/><circle cx="8" cy="10.2" r=".9" fill="currentColor" stroke="none"/><circle cx="12" cy="7.6" r=".9" fill="currentColor" stroke="none"/><circle cx="16" cy="10.2" r=".9" fill="currentColor" stroke="none"/></svg></div>
+<h3 data-i18n="themeTitle">App Themes</h3>
+<p class="desc" data-i18n="themeBody">Total color customization — pick an accent, and every panel, glow, and button follows. Try it on this page.</p>
+<div class="showcase-visual">
+<span class="try-label" data-i18n="tryTheme">Try a theme</span>
+<div class="lang-row">
+<button class="theme-swatch theme-swatch--lg is-active" data-theme-index="0" aria-label="Nebula Blue theme" style="background:linear-gradient(135deg,#32C8FF,#FF981E);color:#32C8FF"></button>
+<button class="theme-swatch theme-swatch--lg" data-theme-index="1" aria-label="Solar Flare theme" style="background:linear-gradient(135deg,#FF6B35,#FFD23F);color:#FF6B35"></button>
+<button class="theme-swatch theme-swatch--lg" data-theme-index="2" aria-label="Violet Storm theme" style="background:linear-gradient(135deg,#A855F7,#EC4899);color:#A855F7"></button>
+<button class="theme-swatch theme-swatch--lg" data-theme-index="3" aria-label="Emerald Signal theme" style="background:linear-gradient(135deg,#10B981,#22D3EE);color:#10B981"></button>
+</div>
+</div>
+</div>
+
+<div class="showcase-card">
+<div class="showcase-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a13.5 13.5 0 010 18a13.5 13.5 0 010-18"/></svg></div>
+<h3 data-i18n="localeTitle">Localization</h3>
+<p class="desc" data-i18n="localeBody">The full app interface in English or Spanish today, with more languages on the way. Flip the switch below.</p>
+<div class="showcase-visual">
+<span class="try-label" data-i18n="tryLang">Try a language</span>
+<div class="lang-row">
+<button class="lang-chip is-active" data-lang="en">EN · English</button>
+<button class="lang-chip" data-lang="es">ES · Español</button>
+<span class="mini-badge">+ more coming</span>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<div class="divider-glow"></div>
+
+<!-- ================= FEATURES ================= -->
+
+<section id="features">
+
+<div class="section-title">
+<span>Capabilities</span>
+<h2>The engine underneath it all</h2>
+<p>Everything above sits on top of the same battle-tested detection core — a consensus intro engine, three recap lanes, and a full deploy/upkeep pipeline, all running locally on your own PC.</p>
+</div>
+
+<div class="features-grid">
+
+<div class="feature">
+<div class="feature-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg></div>
+<h3>Consensus intro engine</h3>
+<p>A pure-Python variance-map engine built on Chromaprint fingerprinting plus silence/black-frame fusion.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 3 3 8l9 5 9-5-9-5z"/><path d="M3 13l9 5 9-5"/></svg></div>
+<h3>Three-lane recap detection</h3>
+<p>Falls through embedded subtitles, then Whisper speech-to-text, then Tesseract OCR on burned-in "Previously on" cards — whichever the episode actually has.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 1.3 2.7-.3 1.1 2.5 2.5 1.1-.3 2.7L21.7 12l-1.3 2.4.3 2.7-2.5 1.1-1.1 2.5-2.7-.3L12 22l-2.4-1.3-2.7.3-1.1-2.5-2.5-1.1.3-2.7L2.3 12l1.3-2.4-.3-2.7 2.5-1.1L7 3.3l2.7.3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+<h3>Confidence tiers, not guesses</h3>
+<p>Nothing deploys silently on shaky evidence. Uncertain calls sit in Hold until you confirm them, and every confirmation is logged.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 3v12"/><path d="M8 8l4-5 4 5"/><path d="M4 15v4a2 2 0 002 2h12a2 2 0 002-2v-4"/></svg></div>
+<h3>Multi-format export</h3>
+<p>ScenePass JSON, Kodi/MPlayer EDL, and ffmpeg-style chapters, written side-by-side with your episodes — never into them.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg></div>
+<h3>Health scan</h3>
+<p>A read-only audit that catches orphaned sidecars, drift between the database and disk, and missing source files — with one-click fixes.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 4v10"/><path d="M8 10l4 4 4-4"/><path d="M4 18h16"/></svg></div>
+<h3>Self-installing dependencies</h3>
+<p>FFmpeg, fpcalc, VLC, Tesseract and Whisper models download themselves into ScenePass's own folder — nothing touches your system PATH.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M4 7.5l8 4.5 8-4.5"/><path d="M12 12v9"/></svg></div>
+<h3>Clean install, clean uninstall</h3>
+<p>A standard Windows setup that installs just for you, with no admin rights needed. It adds a Start-menu entry and removes itself cleanly from Apps &amp; features.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0114-5.3L20 8"/><path d="M20 4v4h-4"/><path d="M20 12a8 8 0 01-14 5.3L4 16"/><path d="M4 20v-4h4"/></svg></div>
+<h3>Built-in updates</h3>
+<p>Checks this release channel for new versions, downloads and SHA-256-verifies the update, and stages it in place.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+<h3>Three-layer disaster recovery</h3>
+<p>Restore the database from a backup, rebuild it straight from sidecar files, or reapply the gold ledger of every human-confirmed boundary — three independent safety nets, any one of which brings your library back.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg></div>
+<h3>Your confirmations are permanent</h3>
+<p>Once you confirm or hand-edit a boundary, it's locked. Simple and Force Scan alike reload it from cache instead of re-deriving it, so a re-scan can never quietly erase your work.</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M4 20h4L18 10l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></div>
+<h3>Effortless boundary review</h3>
+<p>Fine-tune any episode's boundaries with a built-in VLC preview — one at a time, or across a whole season at once with Bulk Review's fill-down and offset tools.</p>
+</div>
+
+</div>
+
+</section>
+
+<div class="divider-glow"></div>
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section id="how">
+
+<div class="section-title">
+<span data-i18n="howTag">Pipeline</span>
+<h2 data-i18n="howTitle">One pass through the library, six stages</h2>
+<p>Mount a folder, scan it, review what came back, and let ScenePass keep watching, scheduling, and sharing from there.</p>
+</div>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-content">
+<h3 data-i18n="step1">01 · Mount</h3>
+<p data-i18n="step1b">Point ScenePass at a folder of shows. It reads the tree once and remembers it.</p>
+</div>
+<div class="timeline-node"><svg viewBox="0 0 24 24"><path d="M3 7h6l2 2h10v9a1 1 0 01-1 1H4a1 1 0 01-1-1V7z"/></svg></div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-content">
+<h3 data-i18n="step2">02 · Scan</h3>
+<p data-i18n="step2b">The Consensus intro engine fingerprints audio across a season; a three-lane pipeline (subtitles → Whisper → OCR) catches recap cues.</p>
+</div>
+<div class="timeline-node"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="1.6" fill="currentColor" stroke="none"/><circle cx="15" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="7" cy="18" r="1.6" fill="currentColor" stroke="none"/></svg></div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-content">
+<h3 data-i18n="step3">03 · Review</h3>
+<p data-i18n="step3b">Every result lands in a confidence tier — confident-deploy or verify-hold — so you know what to trust and what to eyeball.</p>
+</div>
+<div class="timeline-node"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="M20 20l-5.5-5.5"/></svg></div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-content">
+<h3 data-i18n="step4">04 · Export</h3>
+<p data-i18n="step4b">Markers are written as sidecar files in whatever format your player reads. Your video files are never touched.</p>
+</div>
+<div class="timeline-node"><svg viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg></div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-content">
+<h3 data-i18n="step5">05 · Monitor &amp; Schedule</h3>
+<p data-i18n="step5b">A background watcher and an optional nightly window keep the library current without you lifting a finger.</p>
+</div>
+<div class="timeline-node"><svg viewBox="0 0 24 24"><path d="M12 20v-6"/><circle cx="12" cy="10" r="3"/><path d="M7 7a7 7 0 0110 0"/><path d="M4 4a11 11 0 0116 0"/></svg></div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-content">
+<h3 data-i18n="step6">06 · Share &amp; Remote</h3>
+<p data-i18n="step6b">Family profiles and a mobile remote bring the results to everyone in the house.</p>
+</div>
+<div class="timeline-node"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="2.6"/><path d="M4 19c0-3.3 2.1-5 5-5s5 1.7 5 5"/><rect x="15" y="6" width="6" height="11" rx="1.4"/><path d="M17 15.2h2"/></svg></div>
+</div>
+
+</div>
+
+</section>
+
+<div class="divider-glow"></div>
+
+<figure class="poster poster--portrait">
+<img src="assets/ScenePass_square,round2.png" alt="ScenePass" width="600" height="600">
+<figcaption>Built for people who just want to get to the story.</figcaption>
+</figure>
+
+<div class="divider-glow"></div>
+
+<!-- ================= DOWNLOAD / INSTALL ================= -->
+
+<section id="download">
+
+<div class="section-title">
+<span data-i18n="dlTag">Get Started</span>
+<h2>Installing it</h2>
+<p>One setup file, a few clicks, no admin rights — ScenePass installs just for your user account.</p>
+</div>
+
+<div class="process-strip">
+
+<div class="process-box">
+<div class="icon"><svg viewBox="0 0 24 24"><path d="M12 4v10"/><path d="M8 10l4 4 4-4"/><path d="M4 18h16"/></svg></div>
+<h4>Download the installer</h4>
+<p>Grab the latest <code>ScenePass-&lt;version&gt;-Setup.exe</code> from the releases page.</p>
+</div>
+
+<div class="process-box">
+<div class="icon"><svg viewBox="0 0 24 24"><path d="M4 9h16v10H4z"/><path d="M4 9l2-5h12l2 5"/><path d="M10 13h4"/></svg></div>
+<h4>Run the setup</h4>
+<p>Double-click it and follow the steps. It installs for your account only — no admin prompt.</p>
+</div>
+
+<div class="process-box">
+<div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4V8z" fill="currentColor" stroke="none"/></svg></div>
+<h4>Launch ScenePass</h4>
+<p>Start it from the last setup page, the Start menu, or the optional desktop shortcut.</p>
+</div>
+
+<div class="process-box">
+<div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 13a7.97 7.97 0 000-2l2-1.5-2-3.5-2.4 1a8 8 0 00-1.7-1L15 3h-4l-.3 2.5a8 8 0 00-1.7 1l-2.4-1-2 3.5L6.6 11a7.97 7.97 0 000 2l-2 1.5 2 3.5 2.4-1a8 8 0 001.7 1L11 21h4l.3-2.5a8 8 0 001.7-1l2.4 1 2-3.5-2-1.5z"/></svg></div>
+<h4>Fill in Dependencies</h4>
+<p>First run opens straight into Settings → Dependencies. Click Download on each row.</p>
+</div>
+
+<div class="process-box">
+<div class="icon"><svg viewBox="0 0 24 24"><path d="M3 9h18v10a1 1 0 01-1 1H4a1 1 0 01-1-1V9z"/><path d="M3 9l2-5h4l-2 5"/><path d="M9 9l2-5h4l-2 5"/><path d="M15 9l2-5h3l-2 5"/></svg></div>
+<h4>Mount your library</h4>
+<p>Point ScenePass at the folder that holds your TV shows.</p>
+</div>
+
+<div class="process-box">
+<div class="icon"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="7"/><path d="M21 21l-5.2-5.2"/></svg></div>
+<h4>Scan</h4>
+<p>Check the episodes you want and hit Scan — intros and recaps get found automatically.</p>
+</div>
+
+</div>
+
+<div class="req-bar">
+<div class="req-item"><span class="req-k">OS</span><span class="req-v">Windows 10 / 11 (64-bit)</span></div>
+<div class="req-item"><span class="req-k">Install type</span><span class="req-v">Per-user installer — no admin rights</span></div>
+<div class="req-item"><span class="req-k">Disk</span><span class="req-v">Base app is small; Dependencies add up to a few GB</span></div>
+<div class="req-item"><span class="req-k">Updates</span><span class="req-v">Built-in updater — installs new versions automatically</span></div>
+</div>
+
+<div class="download-panel">
+
+<img src="assets/ScenePass-logo.png" alt="ScenePass" width="480" height="515">
+
+<h2 data-i18n="dlTitle">Ready to skip the intro?</h2>
+
+<p data-i18n="dlBody">Download the latest release, drop it anywhere, and point it at your library. No account, no cloud upload — everything runs on your machine.</p>
+
+<div class="download-actions">
+<a class="primary" href="https://github.com/lynxstrike/ScenePass.repo/releases/latest" data-i18n="primaryBtn">Download Latest Release</a>
+<a class="secondary" href="https://github.com/lynxstrike/ScenePass.repo">View on GitHub</a>
+</div>
+
+</div>
+
+</section>
+
+<div class="divider-glow"></div>
+
+<!-- ================= DISCLAIMER ================= -->
+
+<section id="legal">
+
+<div class="section-title">
+<span>Before You Rely On It</span>
+<h2>Read this first</h2>
+</div>
+
+<div class="legal-grid">
+
+<div class="support-card">
+<h3>How it's built</h3>
+<p>ScenePass is a personal project: the concept, design decisions, and testing are the author's — every line of code is AI-written. There's no traditional dev team and no formal QA process; it's tested against a hand-graded benchmark set, not a commercial test matrix.</p>
+<p>That's also why confidence tiers exist: the detection is heuristic (audio fingerprinting, speech-to-text, OCR), it will occasionally be wrong, and Hold status is the app telling you so rather than guessing silently.</p>
+</div>
+
+<div class="support-card">
+<h3>No warranty</h3>
+<p>Provided "as is," with no warranty of accuracy, merchantability, or fitness for a particular purpose. ScenePass only ever reads and writes sidecar metadata next to your files — it never modifies, re-encodes, or deletes the video itself, and it doesn't download, rip, or circumvent DRM on anything.</p>
+<ul>
+<li>Back up your library and any sidecar metadata before bulk scans or imports.</li>
+<li>Review Hold-tier results before trusting them, especially on content you haven't manually confirmed.</li>
+<li>The author isn't liable for data loss, mis-placed markers, or downstream effects in players that consume ScenePass's output.</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<div class="divider-glow"></div>
+
+<!-- ================= SUPPORT ================= -->
+
+<section id="support">
+
+<div class="section-title">
+<span>Support</span>
+<h2>Support</h2>
+<p>This is a one-person personal project — support is best-effort.</p>
+</div>
+
+<div class="support-grid">
+
+<div class="support-card">
+<div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 015 .5c0 1.5-2 1.8-2 3.5"/><circle cx="12" cy="17" r="1" fill="currentColor" stroke="none"/></svg></div>
+<h3>Built-in help guide</h3>
+<p>Click <strong>Help</strong> in the toolbar for a full walkthrough with screenshots, search, and a table of contents — no browser needed.</p>
+</div>
+
+<div class="support-card">
+<div class="icon"><svg viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M9 13h2l1-3 2 6 1-3h2"/></svg></div>
+<h3>Health scan &amp; logs</h3>
+<p>Run <strong>Health Scan</strong> to catch drift between disk, database, and sidecars. Logs live in the <code>logs\</code> folder — attach the latest one when asking for help.</p>
+</div>
+
+<div class="support-card">
+<div class="icon"><svg viewBox="0 0 24 24"><path d="M8 6l-5 6 5 6"/><path d="M16 6l5 6-5 6"/></svg></div>
+<h3>GitHub</h3>
+<p>Open an issue on the update repo: <a href="https://github.com/lynxstrike/ScenePass.repo/issues">github.com/lynxstrike/ScenePass.repo</a></p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-logo">
+<img src="assets/ScenePass-logo.png" alt="ScenePass Logo" width="480" height="515">
+<span>ScenePass<br><small data-i18n="footTagline" style="font-weight:400;color:var(--muted)">Local-first TV intelligence.</small></span>
+</div>
+
+<div class="footer-links">
+<a href="#showcase" data-i18n="navNew">What's New</a>
+<a href="#features" data-i18n="navFeatures">Features</a>
+<a href="#how" data-i18n="navHow">How It Works</a>
+<a href="#download" data-i18n="navDownload">Download</a>
+<a href="#legal">Disclaimer</a>
+<a href="#support" data-i18n="navSupport">Support</a>
+<a href="https://github.com/lynxstrike/ScenePass.repo">GitHub</a>
+</div>
+
+</div>
+
+<p class="footer-copy">© 2026 lynxstrike — ScenePass. Update &amp; release channel only.</p>
+
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

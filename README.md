@@ -12,7 +12,7 @@
 
 <p align="center">
   <img alt="platform" src="https://img.shields.io/badge/platform-Windows%2010%20%2F%2011-32C8FF">
-  <img alt="install" src="https://img.shields.io/badge/install-portable%2C%20no%20admin-FF981E">
+  <img alt="install" src="https://img.shields.io/badge/install-per--user%2C%20no%20admin-FF981E">
   <img alt="cloud" src="https://img.shields.io/badge/runs-100%25%20local-32C8FF">
   <img alt="modification" src="https://img.shields.io/badge/video%20files-never%20modified-FF981E">
 </p>
@@ -20,7 +20,7 @@
 <p align="center">
   <a href="https://github.com/lynxstrike/ScenePass.repo/releases/latest"><b>Download Latest Release</b></a>
   &nbsp;·&nbsp;
-  <a href="#">Website</a> <!-- TODO: replace with the live ScenePass site URL -->
+  <a href="https://lynxstrike.github.io/ScenePass.repo/ScenePass_Website/">Website</a>
   &nbsp;·&nbsp;
   <a href="#installing-it">Install Guide</a>
   &nbsp;·&nbsp;
@@ -55,7 +55,7 @@ ScenePass finds intros and recaps automatically, then keeps working after the sc
 - **Health scan** — a read-only audit that catches orphaned sidecars, drift between the database and disk, and missing source files, with one-click fixes.
 - **Three-layer disaster recovery** — restore from a backup, rebuild straight from sidecar files, or reapply the gold ledger of every human-confirmed boundary.
 - **Self-installing dependencies** — FFmpeg, fpcalc, VLC, Tesseract, and Whisper models download into ScenePass's own folder. Nothing touches your system PATH.
-- **Fully portable** — one folder, no installer, no registry entries. Copy it to a drive and it runs; delete the folder to uninstall.
+- **Clean install, clean uninstall** — a standard Windows setup that installs just for you, no admin rights needed. It adds a Start-menu entry and removes itself cleanly from Apps & features.
 
 Today, [Kodi](https://kodi.tv/) is the only player wired up, via a companion service addon that
 reads ScenePass's sidecar markers and shows a real Skip Intro / Skip Recap button during
@@ -63,11 +63,11 @@ playback. Jellyfin, Emby, and Plex would each need their own bridge, which doesn
 
 ## Installing It
 
-There's no installer to run — ScenePass is one self-contained folder.
+One setup file, a few clicks, no admin rights — ScenePass installs just for your user account.
 
-1. **Download** the latest `ScenePass-<version>.zip` from [Releases](https://github.com/lynxstrike/ScenePass.repo/releases/latest).
-2. **Extract** it anywhere — a regular drive, an external drive, wherever. No admin rights, no system changes.
-3. **Launch `ScenePass.bat`** — the recommended launcher; it refreshes the taskbar shortcut and starts the app.
+1. **Download** the latest `ScenePass-<version>-Setup.exe` from [Releases](https://github.com/lynxstrike/ScenePass.repo/releases/latest).
+2. **Run the setup** — double-click it and follow the steps. It installs for your account only, no admin prompt.
+3. **Launch ScenePass** — from the last setup page, the Start menu, or the optional desktop shortcut.
 4. **Fill in Dependencies** — first run opens straight into Settings → Dependencies. Click Download on each row.
 5. **Mount your library** — point ScenePass at the folder that holds your TV shows.
 6. **Scan** — check the episodes you want and hit Scan. Intros and recaps get found automatically.
@@ -75,9 +75,9 @@ There's no installer to run — ScenePass is one self-contained folder.
 | | |
 |---|---|
 | **OS** | Windows 10 / 11 (64-bit) |
-| **Install type** | Portable — no installer, no registry |
+| **Install type** | Per-user installer — no admin rights |
 | **Disk** | Base app is small; Dependencies add up to a few GB |
-| **Updates** | Built-in updater, checked from the app against this repo |
+| **Updates** | Built-in updater — installs new versions from this repo automatically |
 
 ## Before You Rely On It
 
