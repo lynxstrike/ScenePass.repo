@@ -95,6 +95,20 @@ particular purpose.
 - Review Hold-tier results before trusting them, especially on content you haven't manually confirmed.
 - The author isn't liable for data loss, mis-placed markers, or downstream effects in players that consume ScenePass's output.
 
+## 🤖 AI-Generated Content Disclosure
+
+Every line of code in ScenePass — the desktop app, the Kodi addon, this repository's
+tooling, and this README — was written by an AI coding assistant (Claude), directed and
+reviewed by the author. There is no separate human-written codebase underneath it; the
+author sets the direction, tests the results against a hand-graded benchmark, and decides
+what ships, but does not hand-write the implementation.
+
+Practically, that means:
+
+- Commits, comments, and docs read as AI-authored because they are.
+- Features and fixes alike are made by directing the AI, not by manual debugging.
+- See **Before You Rely On It** above for what this means for the detection results themselves.
+
 ## Support
 
 - **Built-in help guide** — click **Help** in the toolbar for a full walkthrough with screenshots, search, and a table of contents. No browser needed.
