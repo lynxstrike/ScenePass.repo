@@ -398,7 +398,10 @@ document.addEventListener("DOMContentLoaded", () => {
             step5: "05 · Monitor & Schedule", step5b: "A background watcher and an optional nightly window keep the library current without you lifting a finger.",
             step6: "06 · Share & Remote", step6b: "Family profiles and a mobile remote bring the results to everyone in the house.",
             dlTag: "Get Started", dlTitle: "Ready to skip the intro?",
-            dlBody: "Download the latest release, drop it anywhere, and point it at your library. No account, no cloud upload — everything runs on your machine.",
+            dlBody: "Download the latest installer, run it, and point ScenePass at your library. No account, no cloud upload — everything runs on your machine.",
+            kodiKicker: "Companion add-on · Kodi 19+", kodiTitle: "Watch in Kodi? Get the skip button.",
+            kodiBody: "The free ScenePass service add-on reads the markers this app writes and puts a Skip Intro / Skip Recap button on screen at exactly the right second.",
+            kodiCta: "Get the Kodi add-on",
             footTagline: "Local-first TV intelligence."
         },
 
@@ -434,7 +437,10 @@ document.addEventListener("DOMContentLoaded", () => {
             step5: "05 · Monitorear y Programar", step5b: "Un vigilante en segundo plano y una ventana nocturna opcional mantienen la biblioteca al día sin esfuerzo.",
             step6: "06 · Compartir y Control Remoto", step6b: "Los perfiles familiares y un control remoto móvil llevan los resultados a toda la casa.",
             dlTag: "Comenzar", dlTitle: "¿Listo para omitir la intro?",
-            dlBody: "Descarga la última versión, colócala donde quieras y apúntala a tu biblioteca. Sin cuenta, sin subida a la nube — todo corre en tu máquina.",
+            dlBody: "Descarga el instalador más reciente, ejecútalo y apunta ScenePass a tu biblioteca. Sin cuenta, sin subida a la nube — todo corre en tu máquina.",
+            kodiKicker: "Complemento compañero · Kodi 19+", kodiTitle: "¿Ves tus series en Kodi? Consigue el botón para omitir.",
+            kodiBody: "El complemento de servicio gratuito de ScenePass lee los marcadores que escribe esta app y muestra un botón Omitir Intro / Omitir Resumen en pantalla justo en el segundo exacto.",
+            kodiCta: "Obtener el complemento de Kodi",
             footTagline: "Inteligencia de TV, local ante todo."
         }
 
