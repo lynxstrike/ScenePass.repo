@@ -517,7 +517,7 @@ Your original video files are never modified.
 <div class="timeline-item">
 <div class="timeline-content">
 <h3 data-i18n="step4">04 · Export</h3>
-<p data-i18n="step4b">Markers are written as sidecar files in whatever format your player reads. Your video files are never touched.</p>
+<p data-i18n="step4b">Markers are written as sidecar files in whatever format your player reads. Your video files are never altered.</p>
 </div>
 <div class="timeline-node"><svg viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg></div>
 </div>
@@ -659,12 +659,18 @@ Your original video files are never modified.
 
 <div class="support-card">
 <h3>No warranty</h3>
-<p>Provided "as is," with no warranty of accuracy, merchantability, or fitness for a particular purpose. ScenePass only ever reads and writes sidecar metadata next to your files — it never modifies, re-encodes, or deletes the video itself, and it doesn't download, rip, or circumvent DRM on anything.</p>
+<p>Provided "as is," with no warranty of accuracy, merchantability, or fitness for a particular purpose. ScenePass writes its results as sidecar metadata next to your files — it never alters, re-encodes, or deletes the video itself, and it doesn't download, rip, or circumvent DRM on anything. The one action that moves video files is Move Now (for misfiled episodes), and you start it yourself.</p>
 <ul>
 <li>Back up your library and any sidecar metadata before bulk scans or imports.</li>
 <li>Review Hold-tier results before trusting them, especially on content you haven't manually confirmed.</li>
 <li>The author isn't liable for data loss, mis-placed markers, or downstream effects in players that consume ScenePass's output.</li>
 </ul>
+</div>
+
+<div class="support-card" style="grid-column:1/-1">
+<h3>License</h3>
+<p>ScenePass is proprietary software, free to download and use on your own computers, and not open source: the source code isn't published, and the program may not be redistributed, sold or modified without the author's written permission. All rights reserved.</p>
+<p>It includes third-party components (Qt/PySide6, faster-whisper, NumPy, SciPy and others) under their own licenses — the full notices and license texts are inside every download, in <code>THIRD_PARTY_NOTICES.txt</code> and the <code>licenses</code> folder. Nothing in ScenePass's license limits the rights those licenses give you.</p>
 </div>
 
 </div>
@@ -728,7 +734,7 @@ Your original video files are never modified.
 
 </div>
 
-<p class="footer-copy">© 2026 lynxstrike — ScenePass. Update &amp; release channel only.</p>
+<p class="footer-copy">© 2026 lynxstrike — ScenePass. All rights reserved. Update &amp; release channel only — source code is not published.</p>
 
 </footer>
 

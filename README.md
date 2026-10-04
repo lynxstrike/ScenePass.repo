@@ -7,7 +7,7 @@
 <p align="center">
   <b>Automatic intro &amp; recap detection for your TV library.</b><br>
   Audio fingerprinting, speech recognition, and OCR find the boundaries.<br>
-  Your video files never get touched.
+  Your video files are never altered.
 </p>
 
 <p align="center">
@@ -95,6 +95,21 @@ particular purpose.
 - Review Hold-tier results before trusting them, especially on content you haven't manually confirmed.
 - The author isn't liable for data loss, mis-placed markers, or downstream effects in players that consume ScenePass's output.
 
+## License
+
+ScenePass is **proprietary software — all rights reserved** (© 2026 lynxstrike). It is free to
+download and use on your own computers. It is not open source: the source code is not
+published, and the program may not be redistributed, sold or modified without the author's
+written permission. See [LICENSE.md](LICENSE.md); every download also carries `LICENSE.txt`
+and the disclaimer, `DISCLAIMER.txt`.
+
+ScenePass includes third-party components under their own licenses, including Qt / PySide6
+(LGPL-3.0, used unmodified as separate replaceable library files), faster-whisper,
+CTranslate2, ONNX Runtime, NumPy and SciPy. The full notices and license texts are inside
+every download (`THIRD_PARTY_NOTICES.txt` and the `licenses` folder). FFmpeg, VLC, Tesseract,
+fpcalc and the Whisper models are not included; ScenePass downloads them from their
+publishers on request. Nothing in ScenePass's license limits the rights those licenses give you.
+
 ## 🤖 AI-Generated Content Disclosure
 
 Every line of code in ScenePass — the desktop app, the Kodi addon, this repository's
@@ -121,4 +136,4 @@ Practically, that means:
   <sub>Built for people who just want to get to the story.</sub>
 </p>
 
-<p align="center"><sub>© 2026 lynxstrike — ScenePass. Update &amp; release channel only.</sub></p>
+<p align="center"><sub>© 2026 lynxstrike — ScenePass. All rights reserved. Update &amp; release channel only — source code is not published.</sub></p>
