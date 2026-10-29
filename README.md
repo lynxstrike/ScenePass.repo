@@ -36,7 +36,16 @@ new versions from, and where its issue tracker lives. It doesn't hold the source
 
 ---
 
-## What's New
+## Latest Release — 0.9.5
+
+- **Fixes:** no more hang on the splash screen when a network drive isn't there; no automatic update over a metered connection (new setting, on by default); restarting for an update or a language change during a scan now saves the scan instead of losing it; detection models load reliably when several scan threads start at once.
+- **New:** About ScenePass window (Help menu and tray), Exclusions as a grid with on/off rows and match counts, Recycle Bin always excluded, a Refresh window that shows where it is, clearer Dashboard wording, chapters read only by **Force Scan (read chapters)**, engine caches that survive moving or renaming a show, and a new start-up splash.
+- **Faster first scans:** video checks answered from saved evidence, and the graphics card or CPU decoder is picked automatically (the decoder settings are gone).
+- **Detection:** more accurate intro entry and exit points, recap exits that no longer stop early, and a second look at each season's recap exits.
+
+Full notes are on the [Releases page](https://github.com/lynxstrike/ScenePass.repo/releases/latest).
+
+## Highlights
 
 ScenePass finds intros and recaps automatically, then keeps working after the scan:
 
